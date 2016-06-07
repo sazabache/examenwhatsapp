@@ -1,0 +1,18 @@
+
+.clearfix:after {
+  content: " ";
+  clear:both;
+  display: block;
+}
+.p-0 {
+  padding: 0;
+} 
+.m-0 {
+  margin: 0;
+}
+.flt-right{
+  float: right;
+}
+.flt-left{
+  float: left;
+}

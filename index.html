@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+	  	<title>Whatsapp Web</title>
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+	  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+	  	<link rel="stylesheet" href="css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="css/font-awesone.min.css">
+	  	<link rel="stylesheet" href="css/icomoon.css">
+	  	<link rel="stylesheet" href="css/queries.css">
+	  	<link rel="stylesheet" href="css/utilities.css">
+	  	<link rel="stylesheet" href="css/main.css">
+	  	<!-- Vincula los CSS que faltan -->
+	</head>
+	<body>
+						<div id="chat">
+							<div class="container">
+								<div class="row sombra">
+									<div class="col-sm-4 col-md-4 p-0">
+										<div class="perfil">
+											<img class="img-perfil" src="image/gian.jpg">
+											<div class="icon flt-right">
+												<span class="icon-message"></span>
+												<span class="icon-dots-three-vertical"></span>
+											</div>
+										</div>
+										<div class="barra-buscar">
+											<span class="icon-search"></span>
+					      					<input  type="search" id="buscador" placeholder="Buscar o empezar un chat nuevo">
+					      				</div>
+					      				 <div class="contactos scroll">
+									    	<ul class="contactss">
+									    		<a href="#" id="laboratoria" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/logocodeacademy.png">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Laboratoria Perú</h4>
+															<p class="m-0" id="ultimo">Aldo: Dale dale!</p>
+														</div>
+									    			<span>14:25</span>
+									    		</li></a>
+									    		<a href="#" id="raymi"  data='1' class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/raymi.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Raymi Saldomando</h4>
+															<p class="m-0" id="ultimo1">La clase va bien!</p>
+														</div>
+									    			<span>11:25</span>
+									    		</li></a>
+									    		<a href="#" id="mari" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/mariana.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Mariana Costa</h4>
+															<p class="m-0">El panel de speakers esta buenazo</p>
+														</div>
+									    			<span>09:25</span>
+									    		</li></a>
+									    		<a href="#" id="chama" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/anamaria.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Ana Maria Martinez Franklin</h4>
+															<p class="m-0">pues dale chamo!</p>
+														</div>
+									    			<span>Ayer</span>
+									    		</li></a>
+									    		<a href="#" id="chamo" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/rodulfo.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Rodulfo Prieto</h4>
+															<p class="m-0">¿Como van las chicas?</p>
+														</div>
+									    			<span>Martes</span>
+									    		</li></a>
+									    		<a href="#" id="andrea" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/andrea.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Andrea Lamas</h4>
+															<p class="m-0">Hoy me toca clases de canto, yee!</p>
+														</div>
+									    			<span>Lunes</span>
+									    		</li></a>
+									    		<a href="#" id="papu" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/mariapaula.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Maria Paula Rivarola</h4>
+															<p class="m-0">Wuju! esto me encanta!! en verdad!</p>
+														</div>
+									    			<span>13/01/2016</span>
+									    		</li></a>
+									    		<a href="#" id="katy" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/katy.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Katy Sanchez</h4>
+															<p class="m-0">No te preocupes, tengo el salon bajo control</p>
+														</div>
+									    			<span>11/01/2016</span>
+									    		</li></a>
+									    		<a href="#" id="aldo" class="hidecont"><li>
+									    			<img class="img-perfil foto-actual" src="image/aldo.jpg">
+														<div class="texto-chat">
+															<h4 class="m-0 contname">Aldo Alfaro</h4>
+															<p class="m-0">Vao a comer?</p>
+														</div>
+									    			<span>03/01/2016</span>
+									    		</li></a>
+									    	</ul>
+									    </div>
+					      			</div>
+					      			<div class="col-sm-8 col-md-8 p-0">
+						<div class="perfil">
+							<img class="img-perfil foto-actual" id="fotoactual" src="image/logocodeacademy.png">
+							<div class="texto-chat">
+								<h4 class="m-0" id="nombreactual">Laboratoria Perú</h4>
+								<span class="m-0 chating" id="horaactual">Ana Maria, Aldo, Gian, Mariana, Papu, Tú</span>
+							</div>
+							<div class="icon flt-right">
+								<span class="icon-attachment"></span>
+								<span class="icon-dots-three-vertical"></span>
+							</div>
+						</div>
+						<div class="boxchat scroll" id="chatlist">
+							<ul class="clearfix p-0" id="list">
+								<li class="clearfix">
+									<div class="boxchat-left">
+										<h4 class="tx-celeste m-0">Andrea Lamas</h4>
+										<p class="descripcion m-0">Chicos han viscto el nuevo corte de Aldo?</p>
+										<span class="fecha">14:25</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-left">
+										<h4 class="tx-rosa m-0">Mariana Costa</h4>
+										<p class="descripcion m-0">¿Finalmente se corto?</p>
+										<span class="fecha">11:13</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-left">
+										<h4 class="tx-verde m-0">Maria Paula Rivarola</h4>
+										<p class="descripcion m-0">jajaja Sii finalmente se corto!!</p>
+										<span class="fecha">11:13</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-right">
+										<p class="descripcion m-0">Antes parecia mufasa jajajaja</p>
+										<span class="fecha">11:14</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-right">
+										<p class="descripcion m-0">Ahora si esta decente</p>
+										<span class="fecha">11:18</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-left">
+										<h4 class="tx-celeste m-0">Andrea Lamas</h4>
+										<p class="descripcion m-0">¿Por qué se lo habrá cortado?</p>
+										<span class="fecha">11:20</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-left">
+										<h4 class="tx-maiz m-0">Aldo alfaro</h4>
+										<p class="descripcion m-0">ya ya ya, hacia mucho calor que más</p>
+										<span class="fecha">11:25</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-left">
+										<h4 class="tx-celeste m-0">Andrea Lamas</h4>
+										<p class="descripcion m-0">Esta siguiendo los pasos de Juan Diego!</p>
+										<span class="fecha">11:30</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="boxchat-left">
+										<h4 class="tx-verde m-0">Maria Paula Rivarola</h4>
+										<p class="descripcion m-0">Nunca!!! juan Diego es único</p>
+										<span class="fecha">11:31</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						
+						<div class="perfil chat">
+							<div class="icon-chat flt-left">
+								<span class="icon-insert_emoticon"></span>
+							</div>
+							<form class="chat-text">
+					      <input  type="text" id="inputBox" onkeypress="if (event.keyCode==13){ activity();return false;}" autocomplete="off" placeholder="Escribe tu mensaje aqui">
+
+							</form>
+							<div class="icon-chat flt-right" aria-hidden="true">
+								<span type="button" class="icon-mic" ></span>
+							</div>
+						</div>
+					      		</div>
+					      	</div>
+					    </div>
+			<script src="js/jquery.js"></script>
+			<script src="js/main.js"></script>
+	</body>
+</html>
