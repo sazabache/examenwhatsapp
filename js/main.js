@@ -49,7 +49,6 @@ function activity() {
 }
 function doitem(itText) {
 	var list = document.getElementById("list");
-	//Crear el elemento
 	var elemento = document.createElement("li");
 	elemento.className = "clearfix";
 	var elemento1 = document.createElement("div");
@@ -68,17 +67,18 @@ function doitem(itText) {
 	elemento1.appendChild(time);
 	list.appendChild(elemento);
 }
+function clean() {
+	var inputBox = document.getElementById("inputBox");
+	inputBox.value = "";
+	inputBox.focus();
+}
 function write2(){
 		var str = document.getElementById("ultimo").innerHTML;
 		var etr = getInputValue();
 		var res = str.replace( str , etr );
 		document.getElementById("ultimo").innerHTML = res
 }
-function clean() {
-	var inputBox = document.getElementById("inputBox");
-	inputBox.value = "";
-	inputBox.focus();
-}
+
 function limpiar(){
 	   document.getElementById("list").innerHTML="";
 	}
@@ -105,13 +105,13 @@ function limpiar(){
 	if($('#buscador').val() === ""){
 		$('.hidecont').addClass("display")}
 }
+
 $("#raymi").click(function(){
     $("#list").empty();
     $("#fotoactual").attr("src", contactos[0].image);
     var act = document.getElementById("nombreactual").innerHTML;
 	var act2 = act.replace( act , contactos[0].name);
 	document.getElementById("nombreactual").innerHTML = act2;
-
 	var act3 = document.getElementById("horaactual").innerHTML;
 	var act4 = act3.replace( act3 , contactos[0].time);
 	document.getElementById("horaactual").innerHTML = act4;
@@ -122,7 +122,6 @@ $("#mari").click(function(){
     var act = document.getElementById("nombreactual").innerHTML;
 	var act2 = act.replace( act , contactos[1].name);
 	document.getElementById("nombreactual").innerHTML = act2;
-
 	var act3 = document.getElementById("horaactual").innerHTML;
 	var act4 = act3.replace( act3 , contactos[1].time);
 	document.getElementById("horaactual").innerHTML = act4;
